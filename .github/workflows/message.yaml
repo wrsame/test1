@@ -1,0 +1,13 @@
+name: Simple Workflow on Push
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run JavaScript
+        run: node index.js
