@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run JavaScript
-        run: node index.js
+        run: node hello.js
